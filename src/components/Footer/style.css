@@ -1,0 +1,51 @@
+footer{
+    background: #000000;
+    color: #fff;
+}
+footer h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    padding:27px 0px 0px 17px;
+}
+footer h5{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 25px;
+    padding-left:17px;
+}
+.bottons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottons bottom{
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 198px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+   
+    margin-bottom:26px ;
+}
+.bottons bottom img{
+    padding:12px 19px 12px 16px;
+}
+.bottons bottom h4{
+    color: #000000;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+.creditos{
+    display: flex;
+    justify-content: space-between;
+    padding:24px 48px 10px 48px ;
+}
+.corebiz, .vtex{
+    display:flex;
+    flex-direction: column;
+}

@@ -14,7 +14,7 @@ function App() {
       <Banner />
       <Carrousel />
       <Formulario   />
-      {/* <Footer />  */}
+      <Footer /> 
    </div>
   );
 }
