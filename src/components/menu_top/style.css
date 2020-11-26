@@ -1,0 +1,33 @@
+.menu_superior_mobile{
+    display: flex;
+    justify-content: space-between;
+  margin-bottom: 15.5px;
+}
+.menu_mobile{
+    display: flex;
+    flex-direction: column;  
+}
+.menu_mobile span{
+    width: 22.5px;
+    height: 2.5px;
+    left: 20px;
+    top: 21.26px;
+    background: #000;
+    margin-top:3.75px;
+}
+.logo{
+    width: 102,46px;
+    height: 25px;
+}
+.pesquisar {
+    position: relative;  
+    display: flex;
+    border-bottom:1px solid #7A7A7A; 
+}
+.pequisar img{
+    position: absolute;
+    right: 0;
+}
+.pesquisar input{
+    width: 100%;
+}

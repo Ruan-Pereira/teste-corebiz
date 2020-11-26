@@ -11,10 +11,10 @@ function App() {
   return (
     <div>
       <Menu   />
-      <Banner />
+      {/* <Banner />
       <Carrousel />
       <Formulario   />
-      <Footer /> 
+      <Footer />  */}
    </div>
   );
 }
