@@ -1,0 +1,20 @@
+.banner{
+    background-image: url(../../images/banner.png);
+    height:191.2px;
+    background-repeat:no-repeat;
+    background-size: 100vw;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: multiply;
+}
+.banner h3{
+    padding-top:32px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+.banner h2{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 30.3px;
+}

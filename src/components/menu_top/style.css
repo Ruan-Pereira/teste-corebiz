@@ -23,11 +23,15 @@
     position: relative;  
     display: flex;
     border-bottom:1px solid #7A7A7A; 
+    margin-bottom: 11.58px;
+    padding-bottom: 4px;
 }
 .pequisar img{
     position: absolute;
     right: 0;
+    margin-bottom: 4px;
 }
 .pesquisar input{
     width: 100%;
+   
 }

@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <Menu   />
-      {/* <Banner />
-      <Carrousel />
+      <Banner />
+     {/*  <Carrousel />
       <Formulario   />
       <Footer />  */}
    </div>
