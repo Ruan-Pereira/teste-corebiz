@@ -12,9 +12,9 @@ function App() {
     <div>
       <Menu   />
       <Banner />
-     {/*  <Carrousel />
+      <Carrousel />
       <Formulario   />
-      <Footer />  */}
+      {/* <Footer />  */}
    </div>
   );
 }
