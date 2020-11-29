@@ -19,22 +19,27 @@
     font-weight: 900;
     font-size: 32px;
     line-height: 30.3px;  
+    padding-left: 20px;
 }
 
 @media (min-width: 1180px) {
     .banner{
         height: 430px;  
         background-image: url(../../images/banner_desktop.png);
-        background-size: 60%, auto;
+        
         background-position: right;
         background-color:rgba(0, 0, 0, 0.00);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     .fundo_banner{
         display: block;
         background-image: url(../../images/fundo_banner.png);
         background-size: contain;
         height:100%;
-        width:50%;
+        width:55%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     
     .banner h3{
@@ -46,7 +51,7 @@
         color: #FFFFFF;
         align-items: center;
         padding-top:154px ;
-        max-width: 850px;
+       
     }
     .banner h2{
         font-family: Nunito;
@@ -54,7 +59,9 @@
         font-size: 45px;
         line-height: 45px;
         padding-left:40%;
-        max-width:550px ;
-        max-width: 850px;
+    }
+    .text_Banner{
+        max-width:970px;
+        margin: 0;
     }
 }

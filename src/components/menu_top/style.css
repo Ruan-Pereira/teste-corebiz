@@ -1,6 +1,7 @@
 .total_area{
     height: 80px;
-    padding:7px 15px 0px 15px
+    padding:8px 16px 0px 16px;
+    align-items: center;
 }
 .menu_superior_mobile{
     display: flex;
@@ -22,6 +23,7 @@
     width: 102.46px;
     height: 25px;
 }
+
 .cart_buy{
     height: 18px;
     width: 18px;
@@ -49,10 +51,9 @@
 @media (min-width: 1180px) {
     .total_area{
         height: 80px;
-        padding:16px 8px 0px 8px;
+        padding: 0;
         max-width: 1180px;
-        margin-right:auto;
-        margin-left:auto;
+        margin: auto;
         display: flex; 
         position: relative; 
     }
@@ -66,16 +67,19 @@
     .User {
         display: block;
         padding-right: 48px;
-        display: flex
+        display: flex;
+        height: 30px;
     }.User img{
         width: 18px;
         height: 18px;
+        margin-right: 10px;
     }
     
     .logo{
         width: 170.14px;
         height:30px ;
     }
+    
     .menu_mobile{
         display: none;
     }

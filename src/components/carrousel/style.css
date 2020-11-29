@@ -2,9 +2,26 @@
     max-width: 970px;
     margin: auto;
 }
+.off{
+    background: #F8475F;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: -45px;
+    top: -45px;
+}
+.off p{
+    transform: rotate(45deg);
+    font-weight: 900;
+    font-size: 16px;
+    color: #FFF;
+    top: 35px;
+    right: 55px;
+    position: absolute;
+}
 .Slider{   
     margin: auto;
- 
 }
 .bestSeller h2{
     padding-left:0 ;
@@ -31,6 +48,8 @@
 .carrousel{ 
     width: 140px;
     height: 100%;
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

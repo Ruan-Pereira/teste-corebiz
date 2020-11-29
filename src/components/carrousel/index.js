@@ -44,7 +44,7 @@ useEffect(() => {
         }
       },
       {
-        breakpoint: 380,
+        breakpoint: 480,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -82,51 +82,58 @@ if(item > 0){
     
     <div class="carrousel_total_area" >
       
-      <div className="bestSeller">
-        <h2>Mais vendidos</h2>
-          <span ></span>
-      </div>
+        <div className="bestSeller">
+          <h2>Mais vendidos</h2>
+            <span ></span>
+        </div>
 
-      <Slider className="Slider" {...settings}>
-       {teste.map ((item, key) =>(
-          <div class="carrousel">
-            
-             <div className="image_product">
-              <img  src={`${item.imageUrl}`} alt="happy" />
-             </div>
-             
-              <div className="info_product">
-                <div className="title">
-                    <h3>{item.productName}</h3><br/> 
-                </div>
-
-                  {/* { starRating(item.stars) }  */}
-                <div className="listPrice">
-                    {formactNumber(item.listPrice)}
+        <Slider className="Slider" {...settings}>
+        {teste.map ((item, key) =>(
+            <div class="carrousel">
               
-                </div>
+              <div className="image_product">
+                <img  src={`${item.imageUrl}`} alt="happy" />
 
-                <div className="Price">
-                    <h4>por <b>{formactNumber(item.price)}</b></h4>
-                </div>
-
-                <div className="installments">
-                      <p> {( 
-                          variavel = item.installments[0] && item.installments[0]  ? (
-                            ' ou em  ' + item.installments[0].quantity +
-                            'x de ' + (formactNumber(item.installments[0].value))
-                                ) : ('')
-                          )} 
-                      </p>
-                </div>
+                {item.listPrice !== null ?(
+                  <div className="off">
+                   <p>OFF</p>
+                  </div>
+                ):('')}
               </div>
+              
+              
+                <div className="info_product">
+                  <div className="title">
+                      <h3>{item.productName}</h3><br/> 
+                  </div>
 
-              <button className="footer_button">
-                   <h3>Comprar</h3>
-              </button>
-          </div>
-         ))}  
-    </Slider>
+                    {/* { starRating(item.stars) }  */}
+                  <div className="listPrice">
+                      {formactNumber(item.listPrice)}
+                
+                  </div>
+
+                  <div className="Price">
+                      <h4>por <b>{formactNumber(item.price)}</b></h4>
+                  </div>
+
+                  <div className="installments">
+                        <p> {( 
+                            variavel = item.installments[0] && item.installments[0]  ? (
+                              ' ou em  ' + item.installments[0].quantity +
+                              'x de ' + (formactNumber(item.installments[0].value))
+                                  ) : ('')
+                            )} 
+                        </p>
+                  </div>
+                </div>
+
+                <button className="footer_button">
+                    <h3>Comprar</h3>
+                </button>
+            </div>
+          ))}  
+         </Slider>
     </div>
   )
 };

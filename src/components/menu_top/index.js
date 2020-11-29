@@ -7,6 +7,7 @@ import User from "../../images/user.png"
 
 
 
+
 export default () => {
     return (
        <div className="total_area">
