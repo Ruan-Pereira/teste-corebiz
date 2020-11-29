@@ -2,12 +2,14 @@
     background: #F2F2F2;
     display: flex;
     margin-top:30px;
+    
 }
 .area_formulario, form{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding:0px 16px 16px 16px ;
+    
 }
 .input{
     background: #FFFFFF;
@@ -25,16 +27,34 @@
     background: #000;
     margin-top:7px;
     border-radius: 5px;
-    color:#fff
-    
+    color:#fff 
 }
-.receber_novidades h4{
-    font-size: 14px;
-    padding:17px;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-}
-Slider {
-    max-width: 800px;
+
+@media (min-width: 768px) {
+    .area_formulario{
+        max-width:820px ;
+        margin-right:auto;
+         margin-left:auto;
+    }
+    .area_formulario h2, .area_total_formulario {
+        margin-right:auto;
+         margin-left:auto;
+    }
+    .Notificações_Corebiz{
+        flex-direction: row;
+       
+    }
+    .input{
+        width: 280px;
+        height: 48px;
+        border-radius: 5px;
+        margin-right: 8px;
+        margin-top:0px;
+    }
+    .receber_novidades{
+        width: 140px;
+        height: 48px;
+        border-radius: 5px;
+        margin-top:0px;
+    }
 }
