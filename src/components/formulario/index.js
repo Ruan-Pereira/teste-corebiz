@@ -3,36 +3,38 @@ import './style.css'
 
 export default () => {
 
-    const [search, setSearch] = useState('');
-
-    function handleSubmit(event){
-        event.preventDefault();
-
-        console.log(event)
-    }
+/*     const form = document.getElementById('formulario');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const [nome, email ] = ['nome','email'].map(
+    name => form.querySelector(`[name="${name}"]`).value
+  );
+  alert(`${email}, ${nome} `);
+}); */
+    
     return (
        <div className="area_total_formulario">
            <div className="area_formulario">
                 <h2>Participe de nossas news com promoções e novidades!</h2>
                
-               <form   class="Notificações_Corebiz">
-                <input      className="input"
-                            placeholder="Digite seu nome"
-                            value={search}
+               <form id="formulario" name="" method="" action="" class="Notificações_Corebiz">
+                <input     id="nome"
                             type="text"
-                            name="name"
+                            name="nome"
                             data-rules="required"
-                            onChange={e => setSearch(e.currentTarget.value)}
+                            className="input"
+                            placeholder="Digite seu nome"
                             />
 
                     <input className="input"
+                             id="email"
                             placeholder="Digite seu nome"
                             type="text"
                             name="email"
                             data-rules="required"/>
 
                     <label className="botão">
-                         <input className="receber_novidades" type="submit" value="Eu quero" onChange={handleSubmit}/>
+                         <button className="receber_novidades" type="submit" value="Eu quero" />
                                              
                     </label>
                </form>

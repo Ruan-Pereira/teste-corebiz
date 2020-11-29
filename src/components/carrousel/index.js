@@ -21,175 +21,117 @@ useEffect(() => {
 }, []);
 
   var settings = {
-    arrows:true,
+    accessibility: true,
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll:4,
     adaptiveHeight: true,
-    responsive: [
+    adaptiveHeight:true,
+
+    arrows: true
+    // responsive: [
      
-     {
-        breakpoint: 970,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 620,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
-      },
+    //  {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true,
+    //       arrows: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 620,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       infinite: true,
+    //       dots: true,
+    //       arrows:true
+    //     }
+    //   },
     
       
-    ]
+    // ]
   };
 
 let variavel = '';
-
-/* const starRating = (item) => {
-  let i = 1
-  for (i; i <= 5; i++) {
-    if(item > i) {
-      return(
-        console.log(item)
-      )
-    } else {
-     return(
-      <img src={Negativo}/>
-     )
-    }
-}
  
-} */
-
+const formactNumber = (item) => {
+if(item > 0){
+     return (item / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
+  }
+}
+ /* const starRating = (item) => {
+ var i =1
+  for (i; i <= 5; i++) {
+    if (i <= item) {
+     <h1>estrela vermelha</h1>
+    } else {
+      <h1>estrela branca</h1>
+    }
+  }
+  return starRating;
+} 
+ */
 
   return(
     
-    <Slider className="Slider" {...settings}>
+    <div class="area_total_carrousel " >
+      <div className="area_title">
+        <h2 className="Mais_vendidos">Mais vendidos</h2>
+          <span ></span>
+      </div>
+      <Slider className="Slider" {...settings}>
       
        {teste.map ((item, key) =>(
           <div class="carrousel">
-             <div className="Produto">
-              <img className="Image_produto" src={`${item.imageUrl}`} alt="happy" />
+             <div className="image_product">
+              <img  src={`${item.imageUrl}`} alt="happy" />
              </div>
              
-            <div className="title">
-              <h3>{item.productName}</h3><br/> 
-            </div>
+              <div className="info_product">
+                <div className="title">
+                  <h3>{item.productName}</h3><br/> 
+                </div>
 
-       {/* { starRating(item.stars) }  */}
-            <div className="listPrice">
-              <h2>{item.listPrice  !== null ? (
-                (item.listPrice / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
-              ):( ''
-              )}</h2>
-            </div>
+                {/* { starRating(item.stars) }  */}
+                <div className="listPrice">
+                   {formactNumber(item.listPrice)}
+            
+                </div>
 
-             <div className="Price">
-              <h4>por <b>{(item.price / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})}</b></h4>
-             </div>
+                <div className="Price">
+                  <h4>por <b>{formactNumber(item.price)}</b></h4>
+                </div>
 
-             <div className="installments">
-             <p> {( 
-                variavel = item.installments[0] && item.installments[0]  ? (
-                  ' ou em  ' +
-                  item.installments[0].quantity +
+                <div className="installments">
+                    <p> {( 
+                        variavel = item.installments[0] && item.installments[0]  ? (
+                          ' ou em  ' +
+                          item.installments[0].quantity +
 
-                  'x de ' +
-                      (item.installments[0].value / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
-                  ) : (
-                    <div className="instalments" />
-                  )
-                )} </p>
-             </div>
+                          'x de ' +
+                              //(item.installments[0].value / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
+                             (formactNumber(item.installments[0].value))
+                              ) : (
+                            ''
+                          )
+                        )} 
+                    </p>
+                </div>
+              </div>
 
-                <div className="Comprar"> <h4>Comprar</h4> </div>
+                <div className="footer_products">
+                   <h3>Comprar</h3>
+                </div>
           </div>
          ))} 
         
     </Slider>
+    </div>
   )
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* import React, {useEffect, useState} from "react";
-import Slider from "react-slick";
-import Api from './Api'
-
-export default () => {
-       
-
-
-
- const [Produtos, setProdutos ] = useState([]);
-  useEffect(() => {
-    const loadproducts = async() => {
-      
-      let list = await Api.getprodutos();
-      setProdutos(list)
-    }
-    loadproducts();
-  }, []);
-
-
-
-console.log(Produtos)
-
-    var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2
-  };
-  return (
-    <div>
-      <section>
-        {Produtos.map((item,key) =>{
-          <div key={key}>
-            {}
-          </div>
-        })}
-      </section>
-    </div>
-  );
-} */
