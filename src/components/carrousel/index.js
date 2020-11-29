@@ -64,21 +64,28 @@ let variavel = '';
   
        {teste.map ((item, key) =>(
           <div class="carrousel">
+             <div>
              <img className="Image_produto" src={`${item.imageUrl}`} alt="happy" />
+             </div>
              
-       <h3>{item.productName}</h3><br/> 
+            <div className="title">
+              <h3>{item.productName}</h3><br/> 
+            </div>
 
        {/* { starRating(item.stars) }  */}
+            <div className="listPrice">
+              <h2>{item.listPrice  !== null ? (
+                (item.listPrice / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
+              ):( ''
+              )}</h2>
+            </div>
 
-            
-             <h2>{item.listPrice  !== null ? (
-               (item.listPrice / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
-             ):( <div/>
-             )}</h2>
+             <div className="Price">
+              <h4>por <b>{(item.price / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})}</b></h4>
+             </div>
 
-             <h4>por <b>{(item.price / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})}</b></h4>
-
-              <p> {( 
+             <div className="installments">
+             <p> {( 
                 variavel = item.installments[0] && item.installments[0]  ? (
                   ' ou em  ' +
                   item.installments[0].quantity +
@@ -89,8 +96,9 @@ let variavel = '';
                     <div className="instalments" />
                   )
                 )} </p>
+             </div>
 
-                <buttom className="Comprar"> Comprar </buttom>
+                <div className="Comprar"> Comprar </div>
           </div>
          ))} 
         
