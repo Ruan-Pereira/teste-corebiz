@@ -1,13 +1,18 @@
 .carrousel{
     padding:12px;
-    height: 105px;
+    height: 144px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
 .Image_produto{
     width: 132px;
     height: 122px;   
+    margin-right:auto;
+    margin-left:auto
 }
 .listPrice{
     height: 14px;
@@ -57,8 +62,17 @@ text-align: center;
     width: 140px;
     height: 45px;
     background: #000000;
-    border-radius: 5.56992px;
+    border-radius: 5px;
     text-align: center;
     color: #ffffff;
+    padding-bottom: 3000px;
+    margin-right:auto;
+    margin-left:auto
 
+}
+@media (min-width: 768px) {
+    .Image_produto{
+        width: 216px;
+        height: 200px;
+    }
 }

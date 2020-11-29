@@ -26,9 +26,28 @@ useEffect(() => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll:4,
+    adaptiveHeight: false,
     responsive: [
+     
       {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true
+        }
+      }, {
         breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 620,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -58,14 +77,16 @@ let variavel = '';
 }
  
 } */
+
+
   return(
     
     <Slider {...settings}>
-  
+      
        {teste.map ((item, key) =>(
           <div class="carrousel">
-             <div>
-             <img className="Image_produto" src={`${item.imageUrl}`} alt="happy" />
+             <div className="Produto">
+              <img className="Image_produto" src={`${item.imageUrl}`} alt="happy" />
              </div>
              
             <div className="title">
@@ -98,7 +119,7 @@ let variavel = '';
                 )} </p>
              </div>
 
-                <div className="Comprar"> Comprar </div>
+                <div className="Comprar"> <h4>Comprar</h4> </div>
           </div>
          ))} 
         
