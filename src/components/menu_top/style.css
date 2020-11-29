@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-between;
   margin-bottom: 15.5px;
+  position: relative; 
 }
 .menu_mobile{
     display: flex;
     flex-direction: column;  
 }
+
 .menu_mobile span{
     width: 22.5px;
     height: 2.5px;

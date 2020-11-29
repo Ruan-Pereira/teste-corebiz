@@ -1,14 +1,15 @@
 .area_total_formulario{
     background: #F2F2F2;
     display: flex;
+    margin-top:30px;
 }
-.area_formulario{
+.area_formulario, form{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding:0px 16px 16px 16px ;
 }
-.area_formulario input{
+.input{
     background: #FFFFFF;
     border-radius: 5px;
     margin-top: 22px;
@@ -21,9 +22,10 @@
 .receber_novidades{
     width: 100%;
     height: 48px;
-    background: #000000;
+    background: #000;
     margin-top:7px;
     border-radius: 5px;
+    color:#fff
     
 }
 .receber_novidades h4{
@@ -33,3 +35,4 @@
     text-align: center;
     justify-content: center;
 }
+
