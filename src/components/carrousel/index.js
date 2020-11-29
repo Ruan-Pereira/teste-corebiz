@@ -21,24 +21,17 @@ useEffect(() => {
 }, []);
 
   var settings = {
+    arrows:true,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll:4,
-    adaptiveHeight: false,
+    adaptiveHeight: true,
     responsive: [
      
-      {
-        breakpoint: 10000,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true
-        }
-      }, {
-        breakpoint: 1024,
+     {
+        breakpoint: 970,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -81,7 +74,7 @@ let variavel = '';
 
   return(
     
-    <Slider {...settings}>
+    <Slider className="Slider" {...settings}>
       
        {teste.map ((item, key) =>(
           <div class="carrousel">

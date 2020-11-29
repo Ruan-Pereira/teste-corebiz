@@ -2,7 +2,11 @@
     display: flex;
     justify-content: space-between;
   margin-bottom: 15.5px;
-  position: relative; 
+  
+    
+}
+.User, .user_login{
+    visibility: hidden;
 }
 .menu_mobile{
     display: flex;
@@ -18,7 +22,7 @@
     margin-top:3.75px;
 }
 .logo{
-    width: 102,46px;
+    width: 102.46px;
     height: 25px;
 }
 .pesquisar {
@@ -36,4 +40,37 @@
 .pesquisar input{
     width: 100%;
    
+}
+@media (min-width: 788px) {
+    .menu_desktop{
+        padding:16px 8px 0px 8px;
+        max-width: 1037px;
+        margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    position: relative; 
+    padding-top: auto;
+        padding-bottom: auto;
+    }
+    
+    .menu_mobile{
+        display: none;
+    }
+   .pesquisar{
+    margin-right:auto;
+    margin-left:auto;
+    width: 768px;
+    
+   }
+   .User img{
+    visibility: hidden;
+    width: 18px;
+    height: 18px;
+    
+   }
+    .carrinho{
+        position: absolute;
+        right: 0;
+        
+    }
 }

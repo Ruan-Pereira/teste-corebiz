@@ -18,3 +18,27 @@
     font-size: 32px;
     line-height: 30.3px;
 }
+@media (min-width: 768px) {
+    .banner{
+        height: 430px;
+        
+    }
+    .banner h3{
+        font-family: Nunito;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        padding-left:10%;
+        color: #FFFFFF;
+        align-items: center;
+        padding-top:154px ;
+    }
+    .banner h2{
+        font-family: Nunito;
+        font-weight: 900;
+        font-size: 45px;
+        line-height: 45px;
+        padding-left:10%;
+        max-width:550px ;
+    }
+}
