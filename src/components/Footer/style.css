@@ -40,16 +40,31 @@ footer h5{
     font-size: 12px;
     line-height: 16px;
 }
+.creditos h4{
+    font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 14px;
+}
 .creditos{
     display: flex;
     justify-content: space-between;
     padding:24px 48px 10px 48px ;
 }
-.corebiz, .vtex{
+/* .corebiz, .vtex{
     display:flex;
     flex-direction: column;
+} */
+.corebiz img{
+    width: 48px;
+    height: auto;
 }
-@media (min-width: 768px){
+.vtex img{
+    width: 48px;
+    height: auto;
+}
+@media (min-width: 1180px){
     
     .container_footer{
         display: flex;

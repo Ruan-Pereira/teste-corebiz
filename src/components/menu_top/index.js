@@ -9,7 +9,7 @@ import User from "../../images/user.png"
 
 export default () => {
     return (
-       <div className="menu_desktop">
+       <div className="total_area">
            <div className="menu_superior_mobile">
                 <div className="menu_mobile">
                     <span></span>
@@ -17,15 +17,18 @@ export default () => {
                     <span></span>
                 </div>
                 <img className="logo" src={Logo} />
-                <img className="carrinho" src={Carrinho}/>
+                <img className="cart_buy " src={Carrinho}/>
                
            </div>
-           <div className="pesquisar">
+           <div className="search">
                 <input placeholder="O que você esta procurando?"/>     
                  <img src={Search} />
            </div>
-           <img className="User" src={User}/>
-                <h2 className="user_login"></h2>
+              
+              <div className="User">
+                <img  src={User} />
+                <h2 className="user_login">minha conta</h2>
+              </div>
        </div>
     );
 }

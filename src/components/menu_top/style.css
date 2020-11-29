@@ -1,11 +1,11 @@
+.total_area{
+    height: 80px;
+    padding:7px 15px 0px 15px
+}
 .menu_superior_mobile{
     display: flex;
     justify-content: space-between;
-  margin-bottom: 15.5px;
     
-}
-.User, .user_login{
-    visibility: hidden;
 }
 .menu_mobile{
     display: flex;
@@ -15,8 +15,6 @@
 .menu_mobile span{
     width: 22.5px;
     height: 2.5px;
-    left: 20px;
-    top: 21.26px;
     background: #000;
     margin-top:3.75px;
 }
@@ -24,50 +22,71 @@
     width: 102.46px;
     height: 25px;
 }
-.pesquisar {
+.cart_buy{
+    height: 18px;
+    width: 18px;
+}
+.search {
     position: relative;  
     display: flex;
-    border-bottom:1px solid #7A7A7A; 
-    margin-bottom: 11.58px;
-    padding-bottom: 4px;
+    height: 30px;   
 }
-.pequisar img{
+.search input{
+    border-bottom:1px solid #7A7A7A; 
+}
+.search img{
     position: absolute;
     right: 0;
-    margin-bottom: 4px;
+    height: 18px;
+    width: 18px;
 }
-.pesquisar input{
-    width: 100%;
-   
+.search input{
+    width: 100%;  
 }
-@media (min-width: 788px) {
-    .menu_desktop{
+.User{
+   display:none;
+}
+@media (min-width: 1180px) {
+    .total_area{
+        height: 80px;
         padding:16px 8px 0px 8px;
-        max-width: 1037px;
+        max-width: 1180px;
         margin-right:auto;
-    margin-left:auto;
-    display: flex;
-    position: relative; 
-    padding-top: auto;
-        padding-bottom: auto;
+        margin-left:auto;
+        display: flex; 
+        position: relative; 
+    }
+    .user_login{
+        display: block;
+       font-size: 13px;
+       font-weight: 400;
+        line-height: 18px;
+        color: #7A7A7A;
+    }
+    .User {
+        display: block;
+        padding-right: 48px;
+        display: flex
+    }.User img{
+        width: 18px;
+        height: 18px;
     }
     
+    .logo{
+        width: 170.14px;
+        height:30px ;
+    }
     .menu_mobile{
         display: none;
     }
-   .pesquisar{
+   .search{
     margin-right:auto;
     margin-left:auto;
     width: 768px;
     
    }
-   .User img{
-    visibility: hidden;
-    width: 18px;
-    height: 18px;
-    
-   }
-    .carrinho{
+   
+    .cart_buy{
         position: absolute;
         right: 0;
         

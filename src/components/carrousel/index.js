@@ -25,37 +25,37 @@ useEffect(() => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll:4,
     adaptiveHeight: true,
     adaptiveHeight:true,
+    arrows: true,
 
-    arrows: true
-    // responsive: [
+    responsive: [
      
-    //  {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //       infinite: true,
-    //       dots: true,
-    //       arrows: true
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 620,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //       infinite: true,
-    //       dots: true,
-    //       arrows:true
-    //     }
-    //   },
+     {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 380,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+          arrows:false
+        }
+      },
     
       
-    // ]
+    ]
   };
 
 let variavel = '';
@@ -80,57 +80,52 @@ if(item > 0){
 
   return(
     
-    <div class="area_total_carrousel " >
-      <div className="area_title">
-        <h2 className="Mais_vendidos">Mais vendidos</h2>
+    <div class="carrousel_total_area" >
+      
+      <div className="bestSeller">
+        <h2>Mais vendidos</h2>
           <span ></span>
       </div>
+
       <Slider className="Slider" {...settings}>
-      
        {teste.map ((item, key) =>(
           <div class="carrousel">
+            
              <div className="image_product">
               <img  src={`${item.imageUrl}`} alt="happy" />
              </div>
              
               <div className="info_product">
                 <div className="title">
-                  <h3>{item.productName}</h3><br/> 
+                    <h3>{item.productName}</h3><br/> 
                 </div>
 
-                {/* { starRating(item.stars) }  */}
+                  {/* { starRating(item.stars) }  */}
                 <div className="listPrice">
-                   {formactNumber(item.listPrice)}
-            
+                    {formactNumber(item.listPrice)}
+              
                 </div>
 
                 <div className="Price">
-                  <h4>por <b>{formactNumber(item.price)}</b></h4>
+                    <h4>por <b>{formactNumber(item.price)}</b></h4>
                 </div>
 
                 <div className="installments">
-                    <p> {( 
-                        variavel = item.installments[0] && item.installments[0]  ? (
-                          ' ou em  ' +
-                          item.installments[0].quantity +
-
-                          'x de ' +
-                              //(item.installments[0].value / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
-                             (formactNumber(item.installments[0].value))
-                              ) : (
-                            ''
-                          )
-                        )} 
-                    </p>
+                      <p> {( 
+                          variavel = item.installments[0] && item.installments[0]  ? (
+                            ' ou em  ' + item.installments[0].quantity +
+                            'x de ' + (formactNumber(item.installments[0].value))
+                                ) : ('')
+                          )} 
+                      </p>
                 </div>
               </div>
 
-                <div className="footer_products">
+              <button className="footer_button">
                    <h3>Comprar</h3>
-                </div>
+              </button>
           </div>
-         ))} 
-        
+         ))}  
     </Slider>
     </div>
   )
