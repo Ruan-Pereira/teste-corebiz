@@ -9,11 +9,14 @@ import Email from '../../images/email.png'
 export default () => {
     return (
        <footer>
-           <h3>Localização</h3>
-           <h5>Avenida Andrômeda, 2000, Bloco 6 e 8</h5>
-           <h5>Alphavile SP</h5>
-           <h5>brasil@corebiz.org</h5>
-           <h5>+55 11 3090 1039</h5>
+          <div className="container_footer">
+          <div>
+            <h3>Localização</h3>
+            <h5>Avenida Andrômeda, 2000, Bloco 6 e 8</h5>
+            <h5>Alphavile SP</h5>
+            <h5>brasil@corebiz.org</h5>
+            <h5>+55 11 3090 1039</h5>
+           </div>
            <div className="bottons">
                 <bottom>
                     <img src={Fone} />
@@ -34,6 +37,7 @@ export default () => {
                     <img src={Vtex} />
                 </div>
              </div>
+          </div>
        </footer>
     );
 }
