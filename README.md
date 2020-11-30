@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+#<h1 align="center">
+Teste Front-End Corebiz
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"> Esse repositorio é um teste feito para a vaga de desenvolvedor Front-end junior na Corebiz </p>
 
-## Available Scripts
+<p align="center">
+  
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/ruan-pereira/teste-corebiz?style=for-the-badge&logo=Javascript">
+  <img alt="Code by RangelPereira" src="https://img.shields.io/badge/Code%20by-Ruan Pereira-%237519C1?style=for-the-badge"><br/>
+</p>
 
-In the project directory, you can run:
+<hr>
 
-### `yarn start`
+<p align="center">
+  <img alt="design do projeto" width="100%" src="Readme.png" />
+<p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Dificuldades
+Em relação a o projeto desenvolvida minha maior dificuldade foi a conexão com a API onde eu consegui pegar os dados apos ter acompanhado a aula do professor Bonieky Lacerda, após ter pego os dados da API foi a hora de expor eles em tela de modo geral não tive dificuldades nessa parte, mesmo quando tinha que fazer um "if" para saber se determinado dado existe ou não na API ainda em relação a exibir os dados tive um pouco de complicações em expor as "stars" onde foi necessario fazer um "for" para pegar o valor da nota do produto.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Aprendizado
+Como citado a cima a conexão de API foi necessario aprender na durante o teste mas acompanhando a video aula foi possivél receber os dados sem problemas, mas um dos principais aprendizado sem duvida foi em relação a organização dos codigo onde tentei ao maximo economizar codigos e fazer um codigo de facil entendimento apesar do tempo ter ficado curto... (Aguardem que será feito as funções q não consegui fazer no prazo e postarei aqui)
 
-### `yarn test`
+## Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [X] React
+- [X] Javascript
+- [X] Css
 
-### `yarn build`
+## :arrow_forward: Como executar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_com **npm**_
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# Instalar dependências
+$ npm install
+# Iniciar servidor
+$ npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_com **yarn**_
 
-### `yarn eject`
+```bash
+# Instalar dependências
+$ yarn
+# Iniciar servidor de desenvolvimento
+$ yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
