@@ -12,6 +12,13 @@
     padding-bottom: 36px;
 }
 
+.area_formulario h2{
+    font-size: 22px;
+    font-family: Lato;
+    font-weight: bold;
+
+    color: #333333;
+}
 .input{
     background: #FFFFFF;
     border-radius: 5px;

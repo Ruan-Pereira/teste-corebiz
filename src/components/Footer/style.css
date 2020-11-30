@@ -24,10 +24,11 @@
 .footer span{
     display: flex; 
     margin:16px 0px 20px 17px;
-    width: 65px;
-    height:5px;   
+    width: 32px;
+    height:4px;   
     background: #fff;   
 }
+
 
 .buttons{
     display: flex;
@@ -42,7 +43,7 @@
     width: 198px;
     height: 38px;
     border-radius: 5px;
-    margin-bottom:26px ;
+    margin-top:26px ;
     background: #FFFFFF;
 }
 .buttons button img{
@@ -63,7 +64,11 @@
     font-size: 10px;
     line-height: 14px;
 }
+.creditos p{
+    font-size: 10px;
+    line-height: 14px 
 
+}
 .creditos{
     display: flex;
     justify-content: space-between;
@@ -72,7 +77,8 @@
 
 .corebiz img{
     width: 78px;
-    height: auto;
+    height: 18px;
+    
 }
 
 .vtex img{
@@ -91,6 +97,14 @@
         
         margin-right:auto;
         margin-left:auto;
+    }
+
+    .footer span{
+        display: flex; 
+        margin:16px 0px 20px 17px;
+        width: 65px;
+        height:5px;   
+        background: #fff;   
     }
 
     .buttons{
