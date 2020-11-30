@@ -1,4 +1,4 @@
-#<h1 align="center">
+<h1 align="center">
 Teste Front-End Corebiz
 </h1>
 
@@ -6,7 +6,7 @@ Teste Front-End Corebiz
 
 <p align="center">
   
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/ruan-pereira/teste-corebiz?style=for-the-badge&logo=Javascript">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/ruan-pereira/teste-corebiz?style=for-the-badge&logo=Css">
   <img alt="Code by RangelPereira" src="https://img.shields.io/badge/Code%20by-Ruan Pereira-%237519C1?style=for-the-badge"><br/>
 </p>
 
