@@ -8,24 +8,25 @@ import Email from '../../images/email.png'
 
 export default () => {
     return (
-       <footer>
+       <div className="footer">
           <div className="container_footer">
             <div>
                 <h3>Localização</h3>
+                <span />
                 <h5>Avenida Andrômeda, 2000, Bloco 6 e 8</h5>
                 <h5>Alphavile SP</h5>
                 <h5>brasil@corebiz.org</h5>
                 <h5>+55 11 3090 1039</h5>
             </div>
-            <div className="bottons">
-                    <bottom>
+            <div className="buttons">
+                    <button>
                         <img src={Fone} />
                         <h4>ENTRE EM CONTATO</h4>
-                    </bottom>
-                    <bottom>
+                    </button>
+                    <button>
                         <img src={Email}/>
                         <h4> FALE COM O NOSSO CONSULTOR ONLINE</h4>
-                    </bottom>
+                    </button>
             </div>
             <div className="creditos">
                     <div className="corebiz">
@@ -38,6 +39,6 @@ export default () => {
                     </div>
                 </div>
           </div>
-       </footer>
+       </div>
     );
 }

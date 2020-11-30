@@ -21,20 +21,17 @@ useEffect(() => {
 }, []);
 
   var settings = {
-    accessibility: true,
     dots: true,
     infinite: true,
     speed: 500,
+    infinite: true,
     slidesToShow: 4,
     slidesToScroll:4,
-    adaptiveHeight: true,
-    adaptiveHeight:true,
     arrows: true,
-
     responsive: [
      
      {
-        breakpoint: 768,
+        breakpoint: 960,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -50,7 +47,7 @@ useEffect(() => {
           slidesToScroll: 2,
           infinite: true,
           dots: true,
-          arrows:false
+          arrows:true
         }
       },
     

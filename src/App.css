@@ -11,3 +11,7 @@ input{
     box-shadow: none;
     border:none;
 }
+button{
+    border: 0;
+    cursor: pointer;
+}

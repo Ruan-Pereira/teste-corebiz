@@ -1,65 +1,80 @@
-footer{
+.footer{
     background: #000000;
     color: #fff;
 }
-footer h3{
+
+.footer h3{
+    padding:27px 0px 0px 17px;
+    
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
-    padding:27px 0px 0px 17px;
 }
-footer h5{
+
+.footer h5{
+    padding-left:17px;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 25px;
-    padding-left:17px;
 }
-.bottons{
+
+.footer span{
+    display: flex; 
+    margin:16px 0px 20px 17px;
+    width: 65px;
+    height:5px;   
+    background: #fff;   
+}
+
+.buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.bottons bottom{
-    background: #FFFFFF;
-    border-radius: 5px;
-    width: 198px;
-    height: 38px;
+
+.buttons button{
     display: flex;
     align-items: center;
-   
+
+    width: 198px;
+    height: 38px;
+    border-radius: 5px;
     margin-bottom:26px ;
+    background: #FFFFFF;
 }
-.bottons bottom img{
+.buttons button img{
     padding:12px 19px 12px 16px;
 }
-.bottons bottom h4{
+
+.buttons button h4{
     color: #000000;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
 }
+
 .creditos h4{
     font-family: Nunito;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
 }
+
 .creditos{
     display: flex;
     justify-content: space-between;
     padding:24px 48px 10px 48px ;
 }
-/* .corebiz, .vtex{
-    display:flex;
-    flex-direction: column;
-} */
+
 .corebiz img{
-    width: 48px;
+    width: 78px;
     height: auto;
 }
+
 .vtex img{
     width: 48px;
     height: auto;
@@ -69,22 +84,32 @@ line-height: 14px;
     .container_footer{
         display: flex;
         justify-content: space-between;
-        width: 970px;
         flex-direction: row;
+
+        width: 970px;
+        height: 213px;
+        
         margin-right:auto;
-         margin-left:auto;
+        margin-left:auto;
     }
-    .bottons{
+
+    .buttons{
     padding-top: 56px;
     }
-    footer h3{
+
+    .footer h3{
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
         line-height: 25px;
         padding:27px 0px 0px 17px;
     }
+
     .corebiz{
-    margin-right:29.63px;
+     margin: auto;
+    }
+    .vtex {
+        margin:auto;
+        margin-left:30px
     }
 }
