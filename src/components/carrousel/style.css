@@ -1,7 +1,7 @@
 .carrousel_total_area{
     max-width: 1280px;
     margin: auto;
-    padding:0px 16px
+    padding:0px 8px
 }
 
 .slick-dots li button:before{
@@ -150,6 +150,16 @@ li.slick-active button:before{
     text-align: center;
     padding-top:5.66px;
     color:#7A7A7A    
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    padding:5px 0px 24px;
+}
+.stars img{
+    width: 12px;
+    height: auto;
 }
 
 .installments p{

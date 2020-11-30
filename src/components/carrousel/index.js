@@ -2,8 +2,9 @@ import React, {useEffect, useState} from "react";
 import Slider from "react-slick";
 import Api from './Api'
 import './style.css'
-/* import Positivo from '../../images/Positivo.png'
-import Negativo from '../../images/Negativo.png'  */
+import Filled from '../../images/Positivo.png'
+import unfilled from '../../images/Negativo.png'
+ 
 
 
 export default () => {
@@ -47,7 +48,7 @@ useEffect(() => {
           slidesToScroll: 2,
           infinite: true,
           dots: true,
-          arrows:true
+          arrows:false
         }
       },
     
@@ -62,18 +63,17 @@ if(item > 0){
      return (item / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})
   }
 }
- /* const starRating = (item) => {
- var i =1
-  for (i; i <= 5; i++) {
-    if (i <= item) {
-     <h1>estrela vermelha</h1>
-    } else {
-      <h1>estrela branca</h1>
-    }
-  }
+  const starRating = (item) => {
+ let stars = item
+ let starRating = [];
+
+ for(let i = 1;i <= 5; i++)
+ { 
+    starRating.push(<span> {i <= stars ? <img src={Filled}/>: <img src={unfilled}/> }  </span>)
+ }
   return starRating;
 } 
- */
+ 
 
   return(
     
@@ -104,7 +104,10 @@ if(item > 0){
                       <h3>{item.productName}</h3><br/> 
                   </div>
 
-                    {/* { starRating(item.stars) }  */}
+                  <div className="stars">
+                     { starRating(item.stars) }  
+                  </div>
+
                   <div className="listPrice">
                       {formactNumber(item.listPrice)}
                 
